@@ -1,0 +1,49 @@
+
+.container {
+    display: flex;
+    flex: 1;
+    margin: 0;
+    width: 100vw;
+    background-image: linear-gradient(
+      to left,
+      rgba(143, 127, 201, 0.384),
+      rgba(155, 177, 211, 0.5)
+    ),
+    $images1;
+    background-size: cover;
+  }
+  
+
+  .image-area {
+    height: 100vh;
+    width: 50%;
+    position: relative;
+  
+    &_background {
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-image: $image;
+      background-size: cover;
+      background-position: left;
+      border-top-left-radius: 1000%;
+      border-bottom-left-radius: 1000%;
+      position: absolute;
+    }
+  }
+  
+
+  .text-area {
+    width: 50%;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  
+    &-content {
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+  }
+  
