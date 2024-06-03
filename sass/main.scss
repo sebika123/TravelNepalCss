@@ -1,10 +1,10 @@
 $image: url('/assets/download.jpg');
 $images1:url('/assets/images.jpg');
-$background-color: #333;
-$dropdown-background: #444;
+$background-color: #bac1ef;
+$dropdown-background: #a2a7f0;
 $link-color: white;
 $link-hover-color: #ddd;
-$dropdown-border: #555;
+$dropdown-border: #bf9494;
 
 
 * {
@@ -52,7 +52,7 @@ body, html {
 .overlay-image{
   width: 100%;
   height: 100%;
-background:linear-gradient(to left,rgb(206, 235, 229,.5),rgb(218, 142, 225,.5));
+  background:linear-gradient(to left,rgb(206, 235, 229,.5),rgb(218, 142, 225,.5));
 
 
   position: absolute;
@@ -69,6 +69,7 @@ background:linear-gradient(to left,rgb(206, 235, 229,.5),rgb(218, 142, 225,.5));
   font-size: 20px;
   background: linear-gradient(to right, rgb(171, 171, 188), rgb(136, 171, 220));
   font-weight: bold;
+  z-index: 1500px;
   
   .nav-main_image {
     flex: 1;
@@ -94,7 +95,7 @@ background:linear-gradient(to left,rgb(206, 235, 229,.5),rgb(218, 142, 225,.5));
       list-style: none;
       margin: 0;
       padding: 0;
-      z-index: 1500px;
+  
   }
 
   li {
@@ -119,7 +120,7 @@ background:linear-gradient(to left,rgb(206, 235, 229,.5),rgb(218, 142, 225,.5));
       right: 100%;
       top: 0;
    
-      border: 1px solid $dropdown-border;
+      // border: 1px solid $dropdown-border;
       min-width: 200px;
       li {
           position: relative;

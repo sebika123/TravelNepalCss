@@ -55,6 +55,7 @@ body, html {
   font-size: 20px;
   background: linear-gradient(to right, rgb(171, 171, 188), rgb(136, 171, 220));
   font-weight: bold;
+  z-index: 1500px;
 }
 .nav-main .nav-main_image {
   flex: 1;
@@ -75,7 +76,6 @@ body, html {
   list-style: none;
   margin: 0;
   padding: 0;
-  z-index: 1500px;
 }
 .menu li {
   position: relative;
@@ -86,7 +86,7 @@ body, html {
   text-decoration: none;
 }
 .menu li a:hover {
-  background-color: #444;
+  background-color: #a2a7f0;
   color: #ddd;
 }
 .menu .dropdown {
@@ -94,7 +94,6 @@ body, html {
   position: absolute;
   right: 100%;
   top: 0;
-  border: 1px solid #555;
   min-width: 200px;
 }
 .menu .dropdown li {
