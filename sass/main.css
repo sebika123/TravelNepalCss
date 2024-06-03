@@ -1,61 +1,27 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-}
-
-.container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-.background-image {
-  width: 100vw;
-  height: 100vh;
-  background: url("/assets/download.jpg");
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  -webkit-clip-path: ellipse(40% 100% at 100% 50%);
-          clip-path: ellipse(40% 100% at 100% 50%);
-  top: 10px;
-  left: 0;
-}
-
-.background-image::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: url("/assets/download.jpg") no-repeat center center;
-  position: absolute;
-  -webkit-clip-path: ellipse(40% 100% at 100% 50%);
-          clip-path: ellipse(40% 100% at 100% 50%);
-}
-
-.overlay-image {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to left, rgba(206, 235, 229, 0.5), rgba(218, 142, 225, 0.5));
-  position: absolute;
-  top: 0;
-  left: 0;
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
 }
 
 .nav-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 30px;
   position: relative;
   font-size: 20px;
   background: linear-gradient(to right, rgb(171, 171, 188), rgb(136, 171, 220));
   font-weight: bold;
-  z-index: 1500px;
+  z-index: 1;
 }
 .nav-main .nav-main_image {
   flex: 1;
@@ -72,6 +38,9 @@ body, html {
   gap: 20px;
 }
 
+.menu .center {
+  display: flex;
+}
 .menu ul {
   list-style: none;
   margin: 0;
@@ -83,24 +52,29 @@ body, html {
 .menu li a {
   display: block;
   padding: 10px 20px;
+  color: black;
   text-decoration: none;
+  background-color: rgba(229, 231, 235, 0.5);
 }
 .menu li a:hover {
-  background-color: #a2a7f0;
-  color: #ddd;
+  background-color: rgba(122, 160, 236, 0.5);
+  color: black;
 }
 .menu .dropdown {
   display: none;
   position: absolute;
-  right: 100%;
-  top: 0;
-  min-width: 200px;
+  left: 0%;
+  margin-top: 40px;
+  border: 1px solid transparent;
+  min-width: 120px;
+  margin-right: 200px;
 }
 .menu .dropdown li {
   position: relative;
 }
 .menu .dropdown li:hover > .dropdown {
   display: block;
+  left: 90%;
 }
 .menu li:hover > .dropdown {
   display: block;
@@ -108,4 +82,92 @@ body, html {
 .menu ul li:hover > ul {
   right: 100%;
   top: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  width: 100vw;
+  background-image: linear-gradient(to left, rgba(143, 127, 201, 0.384), rgba(155, 177, 211, 0.5)), url("/assets/images.jpg");
+  background-size: cover;
+}
+
+.image-area {
+  height: 100vh;
+  width: 50%;
+  position: relative;
+}
+
+.image-area_background {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/download.jpg");
+  background-size: cover;
+  background-position: left;
+  border-top-left-radius: 1000%;
+  border-bottom-left-radius: 1000%;
+  position: absolute;
+}
+
+.text-area {
+  width: 50%;
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.text-area_content {
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+button {
+  margin: 10px;
+  min-width: 100px;
+  min-height: 30px;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: rgb(80, 142, 229);
+  color: white;
+  border: none;
+  cursor: pointer;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+button:hover {
+  color: black;
+  background-color: rgb(58, 74, 168);
 }/*# sourceMappingURL=main.css.map */
