@@ -178,6 +178,100 @@ button:hover {
   margin: 5px 0;
 }
 
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  position: relative;
+  font-size: 20px;
+  background: linear-gradient(to right, rgb(171, 171, 188), rgb(136, 171, 220));
+  font-weight: bold;
+  z-index: 1;
+}
+.nav-main .nav-main_image {
+  flex: 1;
+  text-align: left;
+}
+.nav-main .nav-main_navlist {
+  padding: 10px;
+}
+.nav-main .nav-main_navlist:hover {
+  background-color: rgba(229, 231, 235, 0.5);
+}
+.nav-main .nav-main_navlists {
+  display: flex;
+  gap: 20px;
+}
+
+.menu .center {
+  display: flex;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  position: relative;
+}
+.menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  background-color: rgba(229, 231, 235, 0.5);
+}
+.menu li a:hover {
+  background-color: rgba(122, 160, 236, 0.5);
+  color: black;
+}
+.menu .dropdown {
+  display: none;
+  position: absolute;
+  left: 0%;
+  margin-top: 40px;
+  border: 1px solid transparent;
+  min-width: 120px;
+  margin-right: 200px;
+}
+.menu .dropdown li {
+  position: relative;
+}
+.menu .dropdown li:hover > .dropdown {
+  display: block;
+  left: 90%;
+}
+.menu li:hover > .dropdown {
+  display: block;
+}
+.menu ul li:hover > ul {
+  right: 100%;
+  top: 0;
+}
+
+.nav-main_navlists ul li:hover > .dropdown {
+  display: block;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: black;
+  margin: 5px 0;
+}
+
 @media only screen and (max-width: 600px) {
   .nav-main {
     flex-direction: column;
@@ -240,6 +334,42 @@ button:hover {
   }
   .image-area {
     height: 50vh;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+  .nav-main {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  .container .text-area {
+    padding: 60px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+  .nav-main {
+    padding: 10px 25px;
+    font-size: 19px;
+  }
+  .container .text-area {
+    padding: 70px;
+  }
+}
+@media (min-width: 1800px) and (max-width: 2000px) {
+  .nav-main {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+  .container .text-area {
+    padding: 80px;
+  }
+}
+@media (min-width: 2000px) {
+  .nav-main {
+    padding: 15px 40px;
+    font-size: 22px;
+  }
+  .container .text-area {
+    padding: 100px;
   }
 }
 @media (min-width: 900px) and (max-width: 1200px) {

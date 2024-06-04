@@ -1,201 +1,131 @@
-// @media only screen and (max-width: $mobile) {
-//     .nav-main {
-//       flex-direction: column;
-//       align-items: flex-start;
-//       .nav-main_navlists {
-//         flex-direction: column;
-//         gap: 10px;
-//         display: none;
-//         width: 100%;
-        
-//       li {
-//         width: 100%;
-//         a {
-//           display: block;
-//           padding: 10px;
-//           border-bottom: 1px solid #ccc;
-//         }
-//       }
-//     }
 
-//     .nav-toggle-label {
-//       display: block;
-//       cursor: pointer;
-//       padding: 10px;
-//       background-color: #333;
-//       border-radius: 5px;
-
-//       span {
-//         display: block;
-//         width: 25px;
-//         height: 3px;
-//         background: white;
-//         margin: 5px 0;
-//       }
-//     }
-
-//     .nav-toggle {
-//       display: none;
-//     }
-
-//     .nav-toggle:checked + .nav-toggle-label + .nav-main_navlist .nav-main_navlists {
-//       display: flex;
-//     }
-//   }
-// } 
-  
-//     .container {
-//       flex-direction: column;
-//       .image-area {
-//         width: 100%;
-//         height: 50vh;
-//       }
-//       .text-area {
-//         width: 100%;
-//         padding: 20px;
-//       }
-//     }
-  
-//     .text-area {
-//       padding: 40px;
-//     }
-  
-  
-//   @media (min-width: $landscape-tab) and (max-width: $portrait-tab) {
-//     .nav-main {
-//       padding: 10px 20px;
-//       font-size: 18px;
-//     }
-  
-//     .container {
-//       .text-area {
-//         padding: 60px;
-//       }
-//     }
-//   }
-  
-//   @media (min-width: $portrait-tab) and (max-width: $desktop) {
-//     .nav-main {
-//       padding: 10px 25px;
-//       font-size: 19px;
-//     }
-  
-//     .container {
-//       .text-area {
-//         padding: 70px;
-//       }
-//     }
-//   }
-  
-//   @media (min-width: $desktop) and (max-width: $big-desktop) {
-//     .nav-main {
-//       padding: 10px 30px;
-//       font-size: 20px;
-//     }
-  
-//     .container {
-//       .text-area {
-//         padding: 80px;
-//       }
-//     }
-//   }
-  
-//   @media (min-width: $big-desktop) {
-//     .nav-main {
-//       padding: 15px 40px;
-//       font-size: 22px;
-//     }
-  
-//     .container {
-//       .text-area {
-//         padding: 100px;
-//       }
-//     }
-//   }
-  
 
 @media only screen and (max-width: $mobile) {
-  .nav-main {
-      flex-direction: column;
-      align-items: flex-start;
+    .nav-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .nav-main_navlists {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+  
+    .nav-main_navlists ul {
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .nav-main_navlists ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+  
+    .nav-toggle-label {
+        display: block;
+    }
+  
+    .nav-toggle:checked + .nav-toggle-label + .nav-main_navlists {
+        display: flex;
+    }
+  
+    .dropdown {
+        position: static;
+    }
+  
+    .dropdown > li > a {
+        padding-left: 20px;
+    }
+  
+    .nav-main_navlists .dropdown {
+        display: none;
+    }
+  
+    .nav-main_navlists > ul > li > input[type="checkbox"] {
+        display: none;
+    }
+  
+    .nav-main_navlists > ul > li > input[type="checkbox"]:checked ~ .dropdown {
+        display: block;
+    }
+  
+    .nav-main_navlists > ul > li > input[type="checkbox"]:checked ~ a::after {
+        content: "\2212";
+    }
+  
+    .nav-main_navlists .dropdown .dropdown {
+        display: none;
+    }
+  
+    .nav-main_navlists .dropdown > li > input[type="checkbox"] {
+        display: none;
+    }
+  
+    .nav-main_navlists .dropdown > li > input[type="checkbox"]:checked ~ .dropdown {
+        display: block;
+    }
+  
+    .container {
+        flex-direction: column;
+    }
+  
+    .text-area, .image-area {
+        width: 100%;
+        padding: 20px;
+    }
+  
+    .image-area {
+        height: 50vh;
+    }
   }
-
-  .nav-main_navlists {
-      display: none;
-      flex-direction: column;
-      gap: 10px;
-      width: 100%;
+  
+  @media (min-width: $landscape-tab) and (max-width: $portrait-tab) {
+    .nav-main {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+  
+    .container .text-area {
+        padding: 60px;
+    }
   }
-
-  .nav-main_navlists ul {
-      flex-direction: column;
-      width: 100%;
+  
+  @media (min-width: $portrait-tab) and (max-width: $desktop) {
+    .nav-main {
+        padding: 10px 25px;
+        font-size: 19px;
+    }
+  
+    .container .text-area {
+        padding: 70px;
+    }
   }
-
-  .nav-main_navlists ul li a {
-      display: block;
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
+  
+  @media (min-width: $desktop) and (max-width: $big-desktop) {
+    .nav-main {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+  
+    .container .text-area {
+        padding: 80px;
+    }
   }
-
-  .nav-toggle-label {
-      display: block;
+  
+  @media (min-width: $big-desktop) {
+    .nav-main {
+        padding: 15px 40px;
+        font-size: 22px;
+    }
+  
+    .container .text-area {
+        padding: 100px;
+    }
   }
-
-  .nav-toggle:checked + .nav-toggle-label + .nav-main_navlists {
-      display: flex;
-  }
-
-  .dropdown {
-      position: static;
-  }
-
-  .dropdown > li > a {
-      padding-left: 20px;
-  }
-
-  .nav-main_navlists .dropdown {
-      display: none;
-  }
-
-  .nav-main_navlists > ul > li > input[type="checkbox"] {
-      display: none;
-  }
-
-  .nav-main_navlists > ul > li > input[type="checkbox"]:checked ~ .dropdown {
-      display: block;
-  }
-
-  .nav-main_navlists > ul > li > input[type="checkbox"]:checked ~ a::after {
-      content: "\2212";
-  }
-
-  .nav-main_navlists .dropdown .dropdown {
-      display: none;
-  }
-
-  .nav-main_navlists .dropdown > li > input[type="checkbox"] {
-      display: none;
-  }
-
-  .nav-main_navlists .dropdown > li > input[type="checkbox"]:checked ~ .dropdown {
-      display: block;
-  }
-
-  .container {
-      flex-direction: column;
-  }
-
-  .text-area, .image-area {
-      width: 100%;
-      padding: 20px;
-  }
-
-  .image-area {
-      height: 50vh;
-  }
-}
-
+  
 @media (min-width: $landscape-tab) and (max-width: $portrait-tab) {
   .nav-main {
       padding: 10px 20px;
