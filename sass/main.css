@@ -42,7 +42,7 @@ html {
   flex: 1;
   margin: 0;
   width: 100vw;
-  background-image: linear-gradient(to left, rgba(143, 127, 201, 0.384), rgba(155, 177, 211, 0.5)), url("/assets/images.jpg");
+  background-image: linear-gradient(to left, rgba(143, 127, 201, 0.384), rgba(155, 177, 211, 0.5)), url("/assets/download.png");
   background-size: cover;
 }
 
@@ -56,7 +56,7 @@ html {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url("/assets/download.jpg");
+  background-image: url("../assets/mountain.jpg");
   background-size: cover;
   background-position: left;
   border-top-left-radius: 1000%;
@@ -100,60 +100,72 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 10px 30px;
+  position: relative;
+  font-size: 20px;
   background: linear-gradient(to right, rgb(171, 171, 188), rgb(136, 171, 220));
-  color: black;
-}
-
-.nav-main_image {
-  font-size: 1.5rem;
   font-weight: bold;
+  z-index: 1;
 }
-
-.nav-main_navlist {
+.nav-main .nav-main_image {
+  flex: 1;
+  text-align: left;
+}
+.nav-main .nav-main_navlist {
   padding: 10px;
 }
-.nav-main_navlist:hover {
+.nav-main .nav-main_navlist:hover {
   background-color: rgba(229, 231, 235, 0.5);
 }
-
-.nav-main_navlists {
+.nav-main .nav-main_navlists {
   display: flex;
   gap: 20px;
 }
 
-.nav-main_navlists ul {
+.menu .center {
+  display: flex;
+}
+.menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 15px;
 }
-
-.nav-main_navlists ul li {
+.menu li {
   position: relative;
 }
-
-.nav-main_navlists ul li a {
+.menu li a {
+  display: block;
+  padding: 10px 20px;
   color: black;
   text-decoration: none;
-  padding: 10px 15px;
-  display: block;
+  background-color: rgba(229, 231, 235, 0.5);
 }
-
-.dropdown {
+.menu li a:hover {
+  background-color: rgba(122, 160, 236, 0.5);
+  color: black;
+}
+.menu .dropdown {
   display: none;
   position: absolute;
-  background: transparent;
-  color: black;
-  top: 100%;
-  left: 0;
-  width: -moz-max-content;
-  width: max-content;
+  left: 0%;
+  margin-top: 40px;
+  border: 1px solid transparent;
+  min-width: 120px;
+  margin-right: 200px;
 }
-
-.dropdown li a {
-  color: black;
+.menu .dropdown li {
+  position: relative;
+}
+.menu .dropdown li:hover > .dropdown {
+  display: block;
+  left: 90%;
+}
+.menu li:hover > .dropdown {
+  display: block;
+}
+.menu ul li:hover > ul {
+  right: 100%;
+  top: 0;
 }
 
 .nav-main_navlists ul li:hover > .dropdown {

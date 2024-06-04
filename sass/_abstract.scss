@@ -1,19 +1,16 @@
-
-$image: url("/assets/download.jpg");
-$images1: url("/assets/images.jpg");
+$image: url("../assets/mountain.jpg");
+$images1: url("/assets/download.png");
 $background-color: rgba(229, 231, 235, 0.5);
 $dropdown-background: rgba(122, 160, 236, 0.5);
 $link-color: black;
 $link-hover-color: black;
 $dropdown-border: #bf9494;
 
-
 $mobile: 600px;
 $landscape-tab: 900px;
 $portrait-tab: 1200px;
 $desktop: 1800px;
 $big-desktop: 2000px;
-
 
 @keyframes moveInLeft {
   0% {
