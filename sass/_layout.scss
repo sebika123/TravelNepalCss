@@ -18,20 +18,20 @@
     height: 100vh;
     width: 50%;
     position: relative;
-  
-    &_background {
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-image: $image;
-      background-size: cover;
-      background-position: left;
-      border-top-left-radius: 1000%;
-      border-bottom-left-radius: 1000%;
-      position: absolute;
-    }
   }
-  
+  .image-area_background {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: $image;
+    background-size: cover;
+    background-position: left;
+    // clip-path: circle(66.2% at 100% 61%);
+    border-top-left-radius: 1000%;
+    border-bottom-left-radius: 1000%;
+    // z-index: 10;
+    position: absolute;
+  }
 
   .text-area {
     width: 50%;
@@ -47,3 +47,22 @@
     }
   }
   
+  
+button {
+  margin: 10px;
+  min-width: 100px;
+  min-height: 30px;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-color: rgb(80 142 229);
+  color: white;
+  border: none;
+  cursor: pointer;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  &:hover {
+    color: black;
+    background-color: rgb(58, 74, 168);
+  }
+}
