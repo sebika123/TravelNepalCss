@@ -1,12 +1,9 @@
 
+@import "./abstract";
+@import "./base";
+@import "./layout/layout";
 
+@import "./components";
+@import "../sass/features/feature";
 
-@import '_abstract.scss';
-@import '_base.scss';
-@import '_layout.scss';
-@import '_components.scss';
-// @import '_feature.scss';
-// @import '_pages.scss';
-// @import '_themes.scss';
-// @import '_vendors.scss';
-@import '_media-queries.scss';
+@import "_media-queries.scss";

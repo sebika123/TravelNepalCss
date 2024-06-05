@@ -1,0 +1,78 @@
+main {
+  flex: 1;
+  margin: 0;
+  width: 100vw;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.banner {
+  background-image: linear-gradient(
+      to left,
+      rgba(143, 127, 201, 0.384),
+      rgba(155, 177, 211, 0.5)
+    ),
+    $images1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-area {
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  &_content {
+    color: white;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    width: 80%;
+    // max-width: 1200px;
+    text-align: center;
+    &:hover {
+      color: black;
+      transition-duration: 0.5s ease-in;
+    }
+  }
+}
+
+button {
+  margin-top: 20px;
+  min-width: 120px;
+  min-height: 40px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  background-color: rgb(80 142 229);
+  color: $white-color;
+  border: none;
+  cursor: pointer;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  &:hover {
+    color: black;
+    background-color: rgb(58, 74, 168);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text-area {
+    padding: 40px; /* Adjust padding for smaller screens */
+  }
+}
