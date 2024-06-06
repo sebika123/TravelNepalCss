@@ -2,12 +2,14 @@ main {
   flex: 1;
   margin: 0;
   width: 100vw;
+
 }
 
 .wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
+  // padding:0 20px;
 }
 
 .banner {
@@ -29,7 +31,7 @@ main {
 
 .text-area {
   width: 100%;
-  padding: 100px;
+  padding: 50px;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -42,11 +44,14 @@ main {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-    width: 80%;
-    // max-width: 1200px;
+    width: 50%;
     text-align: center;
+   line-height: 1.5em;
+  h2{
+    line-height: 3em;
+  }
     &:hover {
-      color: black;
+  
       transition-duration: 0.5s ease-in;
     }
   }
@@ -73,6 +78,29 @@ button {
 
 @media only screen and (max-width: 600px) {
   .text-area {
-    padding: 40px; /* Adjust padding for smaller screens */
+    padding: 40px; 
+    width:100%;
+    &_content{
+      width:100%;
+      // padding: 0px; 
+      line-height: 1em;
+    }
   }
 }
+
+// @media (max-width: 666px) {
+
+//   .text-area {
+//     padding: 10px; 
+//     width:90%;
+  
+//     line-height: 1px;
+//     &:content{
+//       background-color: aqua;
+//       line-height: 1px;
+//       h2{
+//         line-height: 1px;
+//       }
+//     }
+//   }
+// }

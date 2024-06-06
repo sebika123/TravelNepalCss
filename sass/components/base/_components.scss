@@ -1,5 +1,14 @@
 
+#menu {
+  position:fixed;
+  height: 60px;
+  width: 100%;
+  top: 0;
 
+    display: flex;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.61);
+}
 #menu ul {
   margin: 0;
   padding: 0;
@@ -11,15 +20,7 @@
 
 }
 
-#menu {
-  position:fixed;
-  height: 60px;
-  width: 100%;
-  top: 0;
-    display: flex;
-  justify-content: center;
-  background-color: rgba(128, 128, 128, 0.61);
-}
+
 
 #menu .main-menu {
   display: none;

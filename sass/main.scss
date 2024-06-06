@@ -1,10 +1,7 @@
-
-@import "./abstract";
-@import "./base";
-@import "./layout/layout";
-
-@import "./components";
-@import "../sass/features/feature";
-@import "./stories/stories";
-@import "./footer/footer";
-// @import "_media-queries.scss";
+@import "./components/base/abstract";
+@import "./components/base/base";
+@import "./components/layout/layout";
+@import "./components/base/components";
+@import "./components/features/feature";
+@import "./components/stories/stories";
+@import "./components/footer/footer";

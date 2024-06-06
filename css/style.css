@@ -62,7 +62,7 @@ main {
 
 .text-area {
   width: 100%;
-  padding: 100px;
+  padding: 50px;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -75,11 +75,14 @@ main {
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  width: 80%;
+  width: 50%;
   text-align: center;
+  line-height: 1.5em;
+}
+.text-area_content h2 {
+  line-height: 3em;
 }
 .text-area_content:hover {
-  color: black;
   transition-duration: 0.5s ease-in;
 }
 
@@ -104,19 +107,14 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
   .text-area {
-    padding: 40px; /* Adjust padding for smaller screens */
+    padding: 40px;
+    width: 100%;
+  }
+  .text-area_content {
+    width: 100%;
+    line-height: 1em;
   }
 }
-#menu ul {
-  margin: 0;
-  padding: 0;
-}
-
-.header {
-  position: relative;
-  width: 100%;
-}
-
 #menu {
   position: fixed;
   height: 60px;
@@ -125,6 +123,16 @@ button:hover {
   display: flex;
   justify-content: center;
   background-color: rgba(128, 128, 128, 0.61);
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  width: 100%;
 }
 
 #menu .main-menu {
@@ -285,10 +293,9 @@ button:hover {
 }
 .section-features {
   height: auto;
-  padding: 15rem 0;
+  padding: 6rem 0;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/mountain.jpg");
   background-size: cover;
-  margin-top: 50px;
 }
 
 .row {
@@ -326,20 +333,19 @@ button:hover {
 }
 
 .heading-tertiary {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1.5rem !important;
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .col-1-of-4 {
     flex: 1 1 calc(33.333% - 1rem);
@@ -394,7 +400,7 @@ button:hover {
 }
 .section-stories {
   position: relative;
-  padding: 10rem 0;
+  padding: 10rem 5rem;
   height: auto;
 }
 
@@ -423,28 +429,36 @@ button:hover {
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 1 rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 100;
   display: inline-block;
+  position: center;
   color: black;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   transition: all 0.2s;
+  padding: 5px 50px;
 }
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.heading-tertiary {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .story {
-  width: 75%;
+  width: 80%;
   margin: 0 auto 3rem auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
-  padding: 6rem;
+  padding: 4rem;
   padding-left: 9rem;
-  font-size: 1.6rem;
+  font-size: 1.2 rem;
 }
 .story__shape {
   width: 15rem;
@@ -454,7 +468,7 @@ button:hover {
   shape-outside: circle(50% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
-  transform: translateX(-3rem) skewX(12deg);
+  transform: translateX(-3rem);
   position: relative;
 }
 .story__img {
@@ -484,7 +498,6 @@ button:hover {
   filter: blur(3px) brightness(80%);
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .section-stories {
     padding: 10rem 0;
@@ -549,40 +562,46 @@ button:hover {
     padding: 4rem 0;
   }
   .heading-secondary {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .story {
-    width: 95%;
+    width: 85%;
     padding: 2rem;
     padding-left: 4rem;
   }
   .story__shape {
     width: 8rem;
     height: 8rem;
-    transform: translateX(-1rem) skewX(12deg);
+    position: relative;
+    margin-left: 30px;
+    transform: translateX(-1rem);
   }
   .story__caption {
     font-size: 1.2rem;
   }
+  .heading-tertiary .u-margin-bottom-small {
+    display: block;
+    content: "\a";
+    -space: pre;
+    display: block;
+  }
 }
 .footer {
   background-color: #333;
-  padding: 5rem 0;
-  font-size: 1.4rem;
+  padding: 0;
+  font-size: 1rem;
   color: #f7f7f7;
-  height: auto;
 }
 .footer__logo-box {
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 1rem;
 }
 .footer__logo {
   width: 15rem;
-  height: auto;
 }
 .footer__navigation {
   border-top: 1px solid #777;
-  padding-top: 2rem;
+  padding-top: 1rem;
   display: inline-block;
 }
 .footer__list {
@@ -614,7 +633,6 @@ button:hover {
   float: right;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .footer {
     padding: 8rem 0;

@@ -7,12 +7,6 @@ $link-hover-color: black;
 $dropdown-border: #bf9494;
 $white-color: white;
 
-$mobile: 600px;
-$landscape-tab: 900px;
-$portrait-tab: 1200px;
-$desktop: 1800px;
-$big-desktop: 2000px;
-
 // COLORS
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
@@ -34,16 +28,15 @@ $color-grey-dark-3: #333;
 $color-white: #fff;
 $color-black: #000;
 
+$background-color: rgba(112, 112, 236, 0.5);
+$dropdown-background: rgba(122, 160, 236, 0.5);
+$link-color: black;
+$link-hover-color: black;
+$dropdown-border: #bf9494;
+$white-color: white;
 
 // FONT
-$default-font-size: 1.6rem;
-
-
-// GRID
-$grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
-$gutter-horizontal: 6rem;
+$default-font-size: 1rem;
 
 @keyframes moveInLeft {
   0% {
