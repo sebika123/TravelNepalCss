@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="assets/icon-font.css"/>
+
+    
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -21,30 +23,22 @@
         <input type="checkbox" id="tm">
         <ul class="main-menu clearfix">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Place
-              <span class="drop-icon">▾</span>
-              <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
-            </a>
+          <li>
+            <a href="#">Place <span class="drop-icon">▾</span> <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label></a>
             <input type="checkbox" id="sm1">
             <ul class="sub-menu">
               <li><a href="#">Himal</a></li>
-              <li><a href="#">Hilly
-                  <span class="drop-icon">▾</span>
-                  <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
-                </a>
+              <li>
+                <a href="#">Hilly <span class="drop-icon">▾</span> <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label></a>
                 <input type="checkbox" id="sm2">
                 <ul class="sub-menu">
-                  <li><a href="#">Ktm
-                    <span class="drop-icon">▾</span>
-                    <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
-                      </a>
-                    <input type="checkbox" id="sm2">
+                  <li>
+                    <a href="#">Ktm <span class="drop-icon">▾</span> <label title="Toggle Drop-down" class="drop-icon" for="sm3">▾</label></a>
+                    <input type="checkbox" id="sm3">
                     <ul class="sub-menu">
                       <li><a href="#">Baneshwor</a></li>
                       <li><a href="#">Koteswor</a></li>
-                 </ul>
-                  </li>
-                  
+                    </ul>
                   </li>
                   <li><a href="#">PKr</a></li>
                   <li><a href="#">Bkt</a></li>
@@ -56,6 +50,7 @@
           <li><a href="#">About us</a></li>
         </ul>
       </nav>
+      
 
 
     </header>
@@ -126,7 +121,81 @@
             </div>
         </section>
 
+
+        <section class="section-stories">
+          <div class="bg-video">
+              <video class="bg-video__content" autoplay muted loop>
+                  <source src="./img/video.mp4" type="video/mp4">
+                  <source src="./img/video.webm" type="video/webm">
+                  Your browser is not supported!
+              </video>
+          </div>
+
+          <div class="u-center-text u-margin-bottom-big">
+              <h2 class="heading-secondary">
+                  We make people genuinely happy
+              </h2>
+          </div>
+
+          <div class="row">
+              <div class="story">
+                  <figure class="story__shape">
+                      <img src="img/i1.jpg" alt="Person on a tour" class="story__img">
+                      <figcaption class="story__caption">Alexa</figcaption>
+                  </figure>
+                  <div class="story__text">
+                      <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
+                          ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                          repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="story">
+                  <figure class="story__shape">
+                      <img src="img/i2.webp" alt="Person on a tour" class="story__img">
+                      <figcaption class="story__caption">Siri</figcaption>
+                  </figure>
+                  <div class="story__text">
+                      <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
+                      <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
+                          ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                          repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+
+      </section>
         </main>
+
+
+
+        <footer class="footer">
+          <div class="footer__logo-box">
+              <img src="img/logo-green-small-2x.png" alt="Full logo" class="footer__logo">
+          </div>
+          <div class="row">
+              <div class="col-1-of-2">
+                  <div class="footer__navigation">
+                      <ul class="footer__list">
+                          <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                          <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                      </ul>
+                  </div>
+              </div>
+            
+          </div>
+      </footer>
     </div>
 
 
