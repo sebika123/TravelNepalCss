@@ -194,6 +194,7 @@
     width: 85%;
     padding: 2rem;
     padding-left: 4rem;
+    // overflow: hidden;
   }
 
   .story__shape {
@@ -209,14 +210,18 @@
 
 
   }
+  .story_text{
+    clear: both;
+    margin-top: 2rem;
+  }
  
 .heading-tertiary{
-  .u-margin-bottom-small{
-display:block;
-content: "\A";
--space: pre;
-display: block;
-}
+
+
+clear: both;
+margin-top: 1rem;
+
+
   }
 
 }
