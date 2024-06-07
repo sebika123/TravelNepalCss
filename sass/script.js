@@ -1,10 +1,4 @@
 
-  
-// function toggleNav() {
-//   const overlay = document.getElementById('nav-overlay');
-//   overlay.style.display = (overlay.style.display === 'flex') ? 'none' : 'flex';
-// }
-
 
  function toggleNav() {
           const overlay = document.getElementById('nav-overlay');

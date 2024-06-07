@@ -139,13 +139,6 @@ button:hover {
   position: relative;
 }
 
-#menu .main-menu .sub-menu {
-  position: absolute;
-  padding-right: 50px;
-  top: 50px;
-  margin-right: 20px;
-}
-
 #menu a {
   color: white;
   text-decoration: none;
@@ -161,19 +154,13 @@ button:hover {
 #menu .sub-menu {
   display: none;
   position: absolute;
-  padding-left: 520px;
+  padding-left: 250px;
 }
 
 #menu .sub-menu .sub-menu {
   position: absolute;
   left: 100%;
-  top: 50px;
-}
-
-#menu .sub-menu .sub-menu .sub-menu {
-  position: absolute;
-  left: 100%;
-  top: 0px;
+  top: 0;
 }
 
 #menu li:hover > .sub-menu {
@@ -219,12 +206,10 @@ button:hover {
 
 #nav-overlay .overlay-menu .sub-menu {
   display: none;
-  list-style: none;
 }
 
 #nav-overlay .overlay-menu li:hover > .sub-menu {
   display: block;
-  list-style: none;
 }
 
 #close-overlay {
@@ -252,9 +237,9 @@ button:hover {
   }
   #menu .sub-menu {
     position: absolute;
-    top: 70px;
-    left: 300;
-    background-color: rgba(128, 128, 128, 0.418);
+    top: 60px;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.9);
     padding: 0;
     margin: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -386,7 +371,8 @@ button:hover {
 .bg-video__content {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .u-center-text {
@@ -433,7 +419,6 @@ button:hover {
   width: 15rem;
   height: 15rem;
   float: left;
-  -webkit-shape-outside: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
@@ -671,6 +656,4 @@ button:hover {
   .footer__link:hover, .footer__link:active {
     transform: rotate(2deg) scale(1.1);
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
