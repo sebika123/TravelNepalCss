@@ -49,7 +49,7 @@ main {
 }
 
 .banner {
-  background-image: linear-gradient(to left, rgba(143, 127, 201, 0.384), rgba(155, 177, 211, 0.5)), url("/assets/download.png");
+  background-image: linear-gradient(to left, rgba(143, 127, 201, 0.384), rgba(155, 177, 211, 0.5)), url("../../../img/download.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
