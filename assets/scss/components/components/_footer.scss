@@ -1,34 +1,33 @@
 .footer {
   background-color: $color-grey-dark-3;
-  // margin:auto;
-  padding: 50px;
+  // padding: 1rem;
   font-size: 1rem;
   color: $color-grey-light-1;
 
-
-  &__logo-box {
+  &-logo-box {
     text-align: center;
-    margin-bottom: 1rem;
-  
+    // margin-bottom: 1rem;
   }
 
-  &__logo {
-    width: 15rem;
-
-
+  &-logo {
+    width: 8rem;
   }
 
-  &__navigation {
+  &-navigation {
     border-top: 1px solid $color-grey-dark;
-    padding-top: 1rem;
+    padding: 2rem 0;
     display: inline-block;
+    width: 100%;
   }
 
-  &__list {
+  &-list {
     list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
-  &__item {
+  &-item {
     display: inline-block;
 
     &:not(:last-child) {
@@ -36,7 +35,7 @@
     }
   }
 
-  &__link {
+  &-link {
     &:link,
     &:visited {
       color: $color-grey-light-1;
@@ -64,33 +63,29 @@
 }
 
 @media (max-width: 1200px) {
-  .footer {
-    padding: 8rem 0;
+  .footer-logo-box {
+    margin-bottom: 1rem;
   }
 
-  .footer__logo-box {
-    margin-bottom: 6rem;
-  }
-
-  .footer__navigation {
+  .footer-navigation {
     padding-top: 1.5rem;
   }
 }
 
 @media (max-width: 992px) {
-  .footer {
-    padding: 6rem 0;
-  }
+  // .footer {
 
-  .footer__logo-box {
+  // }
+
+  .footer-logo-box {
     margin-bottom: 4rem;
   }
 
-  .footer__navigation {
+  .footer-navigation {
     padding-top: 1rem;
   }
 
-  .footer__link {
+  .footer-link {
     &:hover,
     &:active {
       transform: rotate(3deg) scale(1.2);
@@ -100,24 +95,23 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 5rem 0;
     text-align: center;
   }
 
-  .footer__logo {
+  .footer-logo {
     width: 12rem;
   }
 
-  .footer__navigation {
+  .footer-navigation {
     display: block;
     margin: 0 auto;
   }
 
-  .footer__list {
+  .footer-list {
     text-align: center;
   }
 
-  .footer__item {
+  .footer-item {
     display: block;
     margin-bottom: 1rem;
 
@@ -126,7 +120,7 @@
     }
   }
 
-  .footer__copyright {
+  .footer-copyright {
     width: 90%;
     float: none;
     margin: 0 auto;
@@ -135,19 +129,28 @@
 
 @media (max-width: 576px) {
   .footer {
-    padding: 4rem 0;
     font-size: 1.2rem;
   }
 
-  .footer__logo {
+  .footer-logo {
     width: 10rem;
   }
 
-  .footer__navigation {
+  .footer-navigation {
     padding-top: 0.5rem;
+    flex-direction: column;
   }
 
-  .footer__link {
+  .footer-list {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-logo-box {
+    margin-bottom: 0;
+  }
+
+  .footer-link {
     &:hover,
     &:active {
       transform: rotate(2deg) scale(1.1);

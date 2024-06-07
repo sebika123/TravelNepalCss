@@ -1,0 +1,139 @@
+.section-features {
+  height: auto;
+  padding: 6rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/assets/images/mountain.jpg");
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+
+    .feature-card {
+      flex: 1 1 calc(25% - 1rem);
+      max-width: calc(25% - 1rem);
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .feature-box {
+        background-color: rgba($color-white, 0.8);
+        font-size: 1rem;
+        padding: 2.5rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+        transition: transform 0.3s;
+
+        &-icon {
+          font-size: 4rem;
+          margin-bottom: 0.5rem;
+          display: inline-block;
+          background-image: linear-gradient(
+            to right,
+            $color-primary-light,
+            $color-primary-dark
+          );
+          background-clip: text;
+        }
+
+        &:hover {
+          transform: translateY(-1.5rem) scale(1.03);
+        }
+      }
+    }
+  }
+
+  .heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem !important;
+
+    @media (max-width: 1200px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .row .feature-card {
+      flex: 1 1 calc(33.333% - 1rem);
+      max-width: calc(33.333% - 1rem);
+    }
+
+    .row .feature-box {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .row .feature-card {
+      flex: 1 1 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+    }
+
+    .row .feature-box {
+      font-size: 0.85rem;
+      padding: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .row .feature-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+
+    .row .feature-box {
+      font-size: 0.8rem;
+      padding: 1.5rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+
+      .feature-card {
+        flex: 0 0 calc(100% - 2rem);
+        max-width: calc(100% - 2rem);
+        justify-content: space-around;
+
+        .feature-box {
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .section-stories {
   position: relative;
-  padding: 10rem 5rem;
+  padding: 5rem 5rem;
   height: auto;
 }
 
@@ -13,20 +13,17 @@
   z-index: -1;
   opacity: 0.15;
   overflow: hidden;
-  // height:auto;
 
-  &__content {
+  &-content {
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
 }
 
-.u-center-text {
+.story-heading {
+  margin-top:1rem !important;
   text-align: center !important;
-}
-.u-margin-top-big {
-  margin-top: 8rem !important;
 }
 
 .heading-secondary {
@@ -34,11 +31,11 @@
   text-transform: uppercase;
   font-weight: 100;
   display: inline-block;
-  position:center;
+  position: center;
   color: black;
   letter-spacing: 0.1rem;
   transition: all 0.2s;
-  padding: 5px 50px;
+  padding: 8px 50px;
   // padding-bottom:10px;
 
   &:hover {
@@ -54,56 +51,59 @@
   // padding: 0 40px;
 }
 
-.story {
-  width: 80%;
-  margin: 0 auto 3rem auto;
-  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
-  background-color: rgba($color-white, 0.6);
-  border-radius: 3px;
-  padding: 4rem;
-  padding-left: 9rem;
-  font-size: 1.2 rem;
+.row {
+  .story {
+    width: 80%;
+    margin: 0 auto 3rem auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+    background-color: rgba($color-white, 0.6);
+    border-radius: 3px;
+    padding: 4rem;
+    padding-left: 6rem;
+    font-size: 1.2 rem;
 
-  &__shape {
-    width: 15rem;
-    height: 15rem;
-    float: left;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem);
-    position: relative;
-  }
+    &-shape {
+      width: 12rem;
+      height: 12rem;
+      float: left;
+      top: -2rem;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      transform: translateX(-3rem);
+      position: relative;
+    }
 
-  &__img {
-    height: 100%;
-    backface-visibility: hidden;
-    transition: all 0.5s;
-  }
+    &-img {
+      height: 100%;
+      backface-visibility: hidden;
+      transition: all 0.5s;
+    }
 
-  &__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    color: $color-white;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    text-align: center;
-    opacity: 0;
-    transition: all 0.5s;
-    backface-visibility: hidden;
-  }
+    &-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      color: $color-white;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.5s;
+      backface-visibility: hidden;
+    }
 
-  &:hover &__caption {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+    &:hover &-caption {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
 
-  &:hover &__img {
-    transform: translateX(-4rem) scale(1);
-    filter: blur(3px) brightness(80%);
+    &:hover &-img {
+      transform: translateX(-4rem) scale(1);
+      filter: blur(3px) brightness(80%);
+    }
   }
 }
 
@@ -121,12 +121,12 @@
     padding-left: 8rem;
   }
 
-  .story__shape {
+  .story-shape {
     width: 13rem;
     height: 13rem;
   }
 
-  .story__caption {
+  .story-caption {
     font-size: 1.5rem;
   }
 }
@@ -145,12 +145,12 @@
     padding-left: 7rem;
   }
 
-  .story__shape {
+  .story-shape {
     width: 12rem;
     height: 12rem;
   }
 
-  .story__caption {
+  .story-caption {
     font-size: 1.4rem;
   }
 }
@@ -170,58 +170,51 @@
     padding-left: 5rem;
   }
 
-  .story__shape {
+  .story-shape {
     width: 10rem;
     height: 10rem;
     transform: translateX(-2rem) skewX(12deg);
   }
 
-  .story__caption {
+  .story-caption {
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 576px) {
   .section-stories {
-    padding: 4rem 0;
+    padding: 1rem 0;
   }
 
   .heading-secondary {
     font-size: 1.5rem;
   }
 
-  .story {
-    width: 85%;
-    padding: 2rem;
-    padding-left: 4rem;
+  .row .story {
+    width: 100%;
+    // padding: 2rem;
+    // padding-right: 4rem;
     // overflow: hidden;
   }
 
-  .story__shape {
+  .story-shape {
     width: 8rem;
     height: 8rem;
-    position:relative;
+    position: relative;
     margin-left: 30px;
-    transform: translateX(-1rem) ;
+    transform: translateX(-1rem);
   }
 
-  .story__caption {
+  .story-caption {
     font-size: 1.2rem;
-
-
   }
-  .story_text{
+  .story-text {
     clear: both;
     margin-top: 2rem;
   }
- 
-.heading-tertiary{
 
-
-clear: both;
-margin-top: 1rem;
-
-
+  .heading-tertiary {
+    clear: both;
+    margin-top: 1rem;
   }
-
 }

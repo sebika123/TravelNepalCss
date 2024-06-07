@@ -49,7 +49,7 @@ main {
 }
 
 .banner {
-  background-image: linear-gradient(to left, rgba(143, 127, 201, 0.384), rgba(155, 177, 211, 0.5)), url("../../../img/download.png");
+  background-image: linear-gradient(to left, rgba(143, 127, 201, 0.384), rgba(155, 177, 211, 0.5)), url("../../../images/download.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -267,7 +267,7 @@ button:hover {
 .section-features {
   height: auto;
   padding: 6rem 0;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/mountain.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../../images/mountain.jpg");
   background-size: cover;
 }
 
@@ -390,7 +390,8 @@ button:hover {
 .bg-video__content {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .u-center-text {
@@ -437,7 +438,6 @@ button:hover {
   width: 15rem;
   height: 15rem;
   float: left;
-  -webkit-shape-outside: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
@@ -563,13 +563,11 @@ button:hover {
 }
 .footer {
   background-color: #333;
-  padding: 50px;
   font-size: 1rem;
   color: #f7f7f7;
 }
 .footer__logo-box {
   text-align: center;
-  margin-bottom: 1rem;
 }
 .footer__logo {
   width: 15rem;
@@ -610,10 +608,10 @@ button:hover {
 
 @media (max-width: 1200px) {
   .footer {
-    padding: 8rem 0;
+    padding: 6rem 0;
   }
   .footer__logo-box {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
   .footer__navigation {
     padding-top: 1.5rem;
@@ -675,6 +673,4 @@ button:hover {
   .footer__link:hover, .footer__link:active {
     transform: rotate(2deg) scale(1.1);
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

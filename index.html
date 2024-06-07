@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="assets/icon-font.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/icon-font.css" />
 
     <link
       rel="stylesheet"
@@ -15,43 +15,14 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <!-- <nav id="menu">
-        <label for="tm" id="toggle-menu">Menu <span class="drop-icon">▾</span></label>
-        <input type="checkbox" id="tm">
-        <ul class="main-menu clearfix">
-          <li><a href="#">Home</a></li>
-          <li>
-            <a href="#">Place <span class="drop-icon">▾</span> <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label></a>
-            <input type="checkbox" id="sm1">
-            <ul class="sub-menu">
-              <li><a href="#">Himal</a></li>
-              <li>
-                <a href="#">Hilly <span class="drop-icon">▾</span> <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label></a>
-                <input type="checkbox" id="sm2">
-                <ul class="sub-menu">
-                  <li>
-                    <a href="#">Ktm <span class="drop-icon">▾</span> <label title="Toggle Drop-down" class="drop-icon" for="sm3">▾</label></a>
-                    <input type="checkbox" id="sm3">
-                    <ul class="sub-menu">
-                      <li><a href="#">Baneshwor</a></li>
-                      <li><a href="#">Koteswor</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">PKr</a></li>
-                  <li><a href="#">Bkt</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Terai</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About us</a></li>
-        </ul>
-      </nav>  -->
-
         <nav id="menu">
           <div id="hamburger" onclick="toggleNav()">Menu ☰</div>
           <ul class="main-menu clearfix">
-            <img src="./img/travel-logo.png" class="travel-logo" alt="logo" />
+            <img
+              src="./assets/images/travel-logo.png"
+              class="travel-logo"
+              alt="logo"
+            />
             <li><a href="#">Home</a></li>
             <li>
               <a
@@ -65,14 +36,14 @@
                   <a
                     href="javascript:void(0);"
                     onclick="toggleSubMenu(event, 'submenu-2')"
-                    >Hilly <span class="drop-icon">▾</span></a
+                    >Hilly <span class="drop-icon"></span></a
                   >
                   <ul class="sub-menu" id="submenu-2">
                     <li>
                       <a
                         href="javascript:void(0);"
                         onclick="toggleSubMenu(event, 'submenu-3')"
-                        >Ktm <span class="drop-icon">▾</span></a
+                        >Ktm <span class="drop-icon"></span></a
                       >
                       <ul class="sub-menu" id="submenu-3">
                         <li><a href="#">Baneshwor</a></li>
@@ -132,8 +103,6 @@
             <div id="close-overlay" onclick="toggleNav()">✕</div>
           </div>
         </div>
-
-        <script src="./sass/script.js" defer></script>
       </header>
       <main>
         <section class="banner">
@@ -154,55 +123,57 @@
         </section>
 
         <section class="section-features">
-          <div class="row">
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <i class="feature-box__icon icon-basic-world"></i>
-                <h3 class="heading-tertiary u-margin-bottom-small">
-                  Explore the world
-                </h3>
-                <p class="feature-box__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aperiam, ipsum sapiente aspernatur.
-                </p>
+          <div class="container">
+            <div class="row">
+              <div class="feature-card">
+                <div class="feature-box">
+                  <i class="feature-box-icon icon-basic-world"></i>
+                  <h3 class="heading-tertiary .story-heading">
+                    Explore the world
+                  </h3>
+                  <p class="feature-box-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam, ipsum sapiente aspernatur.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <i class="feature-box__icon icon-basic-compass"></i>
-                <h3 class="heading-tertiary u-margin-bottom-small">
-                  Meet nature
-                </h3>
-                <p class="feature-box__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aperiam, ipsum sapiente aspernatur.
-                </p>
+              <div class="feature-card">
+                <div class="feature-box">
+                  <i class="feature-box-icon icon-basic-compass"></i>
+                  <h3 class="heading-tertiary u-margin-bottom-small">
+                    Meet nature
+                  </h3>
+                  <p class="feature-box-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam, ipsum sapiente aspernatur.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <i class="feature-box__icon icon-basic-map"></i>
-                <h3 class="heading-tertiary u-margin-bottom-small">
-                  Find your way
-                </h3>
-                <p class="feature-box__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aperiam, ipsum sapiente aspernatur.
-                </p>
+              <div class="feature-card">
+                <div class="feature-box">
+                  <i class="feature-box-icon icon-basic-map"></i>
+                  <h3 class="heading-tertiary u-margin-bottom-small">
+                    Find your way
+                  </h3>
+                  <p class="feature-box-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam, ipsum sapiente aspernatur.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <i class="feature-box__icon icon-basic-heart"></i>
-                <h3 class="heading-tertiary u-margin-bottom-small">
-                  Live a healthier life
-                </h3>
-                <p class="feature-box__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aperiam, ipsum sapiente aspernatur.
-                </p>
+              <div class="feature-card">
+                <div class="feature-box">
+                  <i class="feature-box-icon icon-basic-heart"></i>
+                  <h3 class="heading-tertiary u-margin-bottom-small">
+                    Live a healthier life
+                  </h3>
+                  <p class="feature-box-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam, ipsum sapiente aspernatur.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -210,28 +181,27 @@
 
         <section class="section-stories">
           <div class="bg-video">
-            <video class="bg-video__content" autoplay muted loop>
-              <source src="./img/video.mp4" type="video/mp4" />
-              <source src="./img/video.webm" type="video/webm" />
+            <video class="bg-video-content" autoplay muted loop>
+              <source src="./assets/videos/video.mp4" type="video/mp4" />
+              <source src="./assets/videos/video.webm" type="video/webm" />
               Your browser is not supported!
             </video>
           </div>
 
-          <div class="u-center-text u-margin-bottom-big">
+          <div class="story-heading">
             <h2 class="heading-secondary">We make people genuinely happy</h2>
           </div>
-
           <div class="row">
             <div class="story">
-              <figure class="story__shape">
+              <figure class="story-shape">
                 <img
-                  src="img/i1.jpg"
+                  src="./assets/images/i1.jpg"
                   alt="Person on a tour"
-                  class="story__img"
+                  class="story-img"
                 />
-                <figcaption class="story__caption">Alexa</figcaption>
+                <figcaption class="story-caption">Alexa</figcaption>
               </figure>
-              <div class="story__text">
+              <div class="story-text">
                 <h3 class="heading-tertiary u-margin-bottom-small">
                   I had the best week ever with my family
                 </h3>
@@ -244,19 +214,16 @@
                 </p>
               </div>
             </div>
-          </div>
-
-          <div class="row">
             <div class="story">
-              <figure class="story__shape">
+              <figure class="story-shape">
                 <img
-                  src="img/i2.webp"
+                  src="./assets/images/i2.webp"
                   alt="Person on a tour"
-                  class="story__img"
+                  class="story-img"
                 />
-                <figcaption class="story__caption">Siri</figcaption>
+                <figcaption class="story-caption">Siri</figcaption>
               </figure>
-              <div class="story__text">
+              <div class="story-text">
                 <h3 class="heading-tertiary u-margin-bottom-small">
                   WOW! My life is completely different now
                 </h3>
@@ -274,37 +241,36 @@
       </main>
 
       <footer class="footer">
-        <div class="footer__logo-box">
+        <div class="footer-logo-box">
           <img
-            src="./img/travel-logo.png"
+            src="./assets/images/travel-logo.png"
             alt="Full logo"
-            class="footer__logo"
+            class="footer-logo"
           />
         </div>
         <div class="row">
-          <div class="col-1-of-2">
-            <div class="footer__navigation">
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Company</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Contact us</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Carrers</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Privacy policy</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Terms</a>
-                </li>
-              </ul>
-            </div>
+          <div class="footer-navigation">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a href="#" class="footer-link">Company</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Contact us</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Carrers</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Privacy policy</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">Terms</a>
+              </li>
+            </ul>
           </div>
         </div>
       </footer>
     </div>
+    <script src="./assets/script/script.js" defer></script>
   </body>
 </html>
