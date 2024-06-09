@@ -18,33 +18,17 @@
         <nav id="menu">
           <div id="hamburger" onclick="toggleNav()">Menu ☰</div>
           <ul class="main-menu clearfix">
-            <img
-              src="./assets/images/travel-logo.png"
-              class="travel-logo"
-              alt="logo"
-            />
+            <img src="./assets/images/travel-logo.png" class="travel-logo" alt="logo">
             <li><a href="#">Home</a></li>
             <li>
-              <a
-                href="javascript:void(0);"
-                onclick="toggleSubMenu(event, 'submenu-1')"
-                >Place <span class="drop-icon">▾</span></a
-              >
+              <a href="javascript:void(0);" onclick="toggleSubMenu(event, 'submenu-1')">Place <span class="drop-icon">▾</span></a>
               <ul class="sub-menu" id="submenu-1">
                 <li><a href="#">Himal</a></li>
                 <li>
-                  <a
-                    href="javascript:void(0);"
-                    onclick="toggleSubMenu(event, 'submenu-2')"
-                    >Hilly <span class="drop-icon"></span></a
-                  >
+                  <a href="javascript:void(0);" onclick="toggleSubMenu(event, 'submenu-2')">Hilly <span class="drop-icon"></span></a>
                   <ul class="sub-menu" id="submenu-2">
                     <li>
-                      <a
-                        href="javascript:void(0);"
-                        onclick="toggleSubMenu(event, 'submenu-3')"
-                        >Ktm <span class="drop-icon"></span></a
-                      >
+                      <a href="javascript:void(0);" onclick="toggleSubMenu(event, 'submenu-3')">Ktm <span class="drop-icon"></span></a>
                       <ul class="sub-menu" id="submenu-3">
                         <li><a href="#">Baneshwor</a></li>
                         <li><a href="#">Koteswor</a></li>
@@ -60,32 +44,19 @@
             <li><a href="#">About us</a></li>
           </ul>
         </nav>
-
-        <div id="nav-overlay">
+        <div id="nav-overlay" onclick="toggleNav()">
           <div class="nav-content">
             <ul class="overlay-menu">
               <li><a href="#">Home</a></li>
               <li>
-                <a
-                  href="javascript:void(0);"
-                  onclick="toggleSubMenu(event, 'overlay-submenu-1')"
-                  >Place <span class="drop-icon">▾</span></a
-                >
+                <a href="javascript:void(0);" onclick="toggleSubMenu(event, 'overlay-submenu-1')">Place <span class="drop-icon">▾</span></a>
                 <ul class="sub-menu" id="overlay-submenu-1">
                   <li><a href="#">Himal</a></li>
                   <li>
-                    <a
-                      href="javascript:void(0);"
-                      onclick="toggleSubMenu(event, 'overlay-submenu-2')"
-                      >Hilly <span class="drop-icon">▾</span></a
-                    >
+                    <a href="javascript:void(0);" onclick="toggleSubMenu(event, 'overlay-submenu-2')">Hilly <span class="drop-icon">▾</span></a>
                     <ul class="sub-menu" id="overlay-submenu-2">
                       <li>
-                        <a
-                          href="javascript:void(0);"
-                          onclick="toggleSubMenu(event, 'overlay-submenu-3')"
-                          >Ktm <span class="drop-icon">▾</span></a
-                        >
+                        <a href="javascript:void(0);" onclick="toggleSubMenu(event, 'overlay-submenu-3')">Ktm <span class="drop-icon">▾</span></a>
                         <ul class="sub-menu" id="overlay-submenu-3">
                           <li><a href="#">Baneshwor</a></li>
                           <li><a href="#">Koteswor</a></li>
@@ -100,9 +71,9 @@
               </li>
               <li><a href="#">About us</a></li>
             </ul>
-            <div id="close-overlay" onclick="toggleNav()">✕</div>
           </div>
         </div>
+        <script src="script.js"></script>
       </header>
       <main>
         <section class="banner">
@@ -128,7 +99,7 @@
               <div class="feature-card">
                 <div class="feature-box">
                   <i class="feature-box-icon icon-basic-world"></i>
-                  <h3 class="heading-tertiary .story-heading">
+                  <h3 class="heading-tertiary ">
                     Explore the world
                   </h3>
                   <p class="feature-box-text">
@@ -140,7 +111,7 @@
               <div class="feature-card">
                 <div class="feature-box">
                   <i class="feature-box-icon icon-basic-compass"></i>
-                  <h3 class="heading-tertiary u-margin-bottom-small">
+                  <h3 class="heading-tertiary ">
                     Meet nature
                   </h3>
                   <p class="feature-box-text">
@@ -153,7 +124,7 @@
               <div class="feature-card">
                 <div class="feature-box">
                   <i class="feature-box-icon icon-basic-map"></i>
-                  <h3 class="heading-tertiary u-margin-bottom-small">
+                  <h3 class="heading-tertiary ">
                     Find your way
                   </h3>
                   <p class="feature-box-text">
@@ -166,7 +137,7 @@
               <div class="feature-card">
                 <div class="feature-box">
                   <i class="feature-box-icon icon-basic-heart"></i>
-                  <h3 class="heading-tertiary u-margin-bottom-small">
+                  <h3 class="heading-tertiary ">
                     Live a healthier life
                   </h3>
                   <p class="feature-box-text">
@@ -202,7 +173,7 @@
                 <figcaption class="story-caption">Alexa</figcaption>
               </figure>
               <div class="story-text">
-                <h3 class="heading-tertiary u-margin-bottom-small">
+                <h3 class="heading-tertiary">
                   I had the best week ever with my family
                 </h3>
                 <p>
@@ -224,7 +195,7 @@
                 <figcaption class="story-caption">Siri</figcaption>
               </figure>
               <div class="story-text">
-                <h3 class="heading-tertiary u-margin-bottom-small">
+                <h3 class="heading-tertiary">
                   WOW! My life is completely different now
                 </h3>
                 <p>
