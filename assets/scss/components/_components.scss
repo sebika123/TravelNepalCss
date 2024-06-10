@@ -9,77 +9,75 @@
   background-color: rgba(128, 128, 128, 0.61);
   padding: 0 20px;
   z-index: 1000;
-}
 
-#menu ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-}
-
-#menu .main-menu {
-  display: none;
-  position: relative;
-}
-
-#menu .main-menu .sub-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 200px;
-  background-color: rgba(128, 128, 128, 0.61);
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
-}
-
-#menu .main-menu a {
-  color: white;
-  text-decoration: none;
-  padding: 1em;
-  display: block;
-  transition: color 0.125s ease-in-out;
-}
-
-#menu .main-menu a:hover {
-  color: black;
-}
-
-#menu .main-menu li:hover > .sub-menu {
-  display: block;
-  visibility: visible;
-  opacity: 1;
-}
-
-#menu .main-menu .sub-menu .sub-menu {
-  top: 50px;
-  left: 100%;
-}
-
-@media only screen and (min-width: 52em) {
-  #menu .main-menu {
-    display: flex;
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
   }
-}
 
-#menu #hamburger {
-  font-size: 24px;
-  cursor: pointer;
-  display: block;
-}
-
-@media only screen and (min-width: 52em) {
-  #menu #hamburger {
+  .main-menu {
     display: none;
-  }
-}
+    position: relative;
 
-#menu .travel-logo {
-  width: 50px;
-  margin-right: 80px;
+    .sub-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 200px;
+      background-color: rgba(128, 128, 128, 0.61);
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 1em;
+      display: block;
+      transition: color 0.125s ease-in-out;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    li:hover > .sub-menu {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .sub-menu .sub-menu {
+      top: 50px;
+      left: 100%;
+    }
+  }
+
+  #hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+
+    @media only screen and (min-width: 52em) {
+      display: none;
+    }
+  }
+
+  .travel-logo {
+    width: 50px;
+    margin-right: 80px;
+  }
+
+  @media only screen and (min-width: 52em) {
+    .main-menu {
+      display: flex;
+    }
+  }
 }
 
 #nav-overlay {
@@ -93,41 +91,41 @@
   justify-content: center;
   align-items: center;
   z-index: 2000;
-}
 
-#nav-overlay .nav-content {
-  text-align: center;
-}
+  .nav-content {
+    text-align: center;
+  }
 
-#nav-overlay .overlay-menu {
-  list-style: none;
-  padding: 0;
-  line-height: 50px;
-}
+  .overlay-menu {
+    list-style: none;
+    padding: 0;
+    line-height: 50px;
 
-#nav-overlay .overlay-menu a {
-  color: white;
-  font-size: 24px;
-  line-height: 30px;
-  padding: 20px;
-  text-decoration: none;
-}
+    a {
+      color: white;
+      font-size: 24px;
+      line-height: 30px;
+      padding: 20px;
+      text-decoration: none;
+    }
 
-#nav-overlay .overlay-menu .sub-menu {
-  display: none;
-  list-style: none;
-}
+    .sub-menu {
+      display: none;
+      list-style: none;
+    }
 
-#nav-overlay .overlay-menu li:hover > .sub-menu {
-  display: block;
-  list-style: none;
-}
+    li:hover > .sub-menu {
+      display: block;
+      list-style: none;
+    }
+  }
 
-#nav-overlay #close-overlay {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
+  #close-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
 }
